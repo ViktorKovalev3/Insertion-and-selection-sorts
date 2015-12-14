@@ -49,6 +49,9 @@
           <property name="focusPolicy">
            <enum>Qt::ClickFocus</enum>
           </property>
+          <property name="inputMask">
+           <string>000000009</string>
+          </property>
           <property name="text">
            <string>1000</string>
           </property>
@@ -287,6 +290,9 @@
         </item>
         <item>
          <widget class="QPlainTextEdit" name="output_plain_selection">
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
           <property name="readOnly">
            <bool>true</bool>
           </property>
@@ -329,7 +335,14 @@
          </widget>
         </item>
         <item>
-         <widget class="QPlainTextEdit" name="output_plain_insertion"/>
+         <widget class="QPlainTextEdit" name="output_plain_insertion">
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QPushButton" name="view_result_selection_2">
